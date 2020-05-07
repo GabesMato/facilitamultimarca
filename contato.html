@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<!-- Meta tags Obrigatórias -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.grid.css">
+		<!-- FONT Lato -->
+		<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<!-- CSS CUSTOM-->
+        <link href='css/custom.css' rel='stylesheet' type='text/css'>
+		<!-- Font-Awesome (Icons +more) -->
+		<script src="https://kit.fontawesome.com/6c31a57d6f.js" crossorigin="anonymous"></script>
+
+
+		<title>FACILITA Multimarcas</title>
+	</head>
+
+
+	<body>
+		<!-- Facebook JS SDK -->
+			<div id="fb-root"></div>
+			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v6.0"></script>
+
+
+		<!-- CABEÇALHO -->
+			<!-- MENU RESPONSIVO (Dropdown on Mobile) -->
+				<nav class="navbar fixed-top navbar-expand-md navbar-light shadow" style="background-color: #f7921e;">
+					<div class="container">
+
+						<a href="#">
+							<img class="navbar-brand h1 my-auto mr-4" src="img/logo-car.png" height="40px">
+						</a>
+						  
+						<button style="background-color: #eb840e;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div id="navbarMenu" class="collapse navbar-collapse">
+
+							<ul class="navbar-nav mr-auto h6 font-weight-bold">
+								<li>
+									<a class="nav-link text-white px-3"
+										href="index.html">
+
+										Início
+									</a>
+								</li>
+								<li>
+									<a  class="nav-link px-3"
+										href="carros.html">
+
+										Carros
+									</a>
+								</li>
+								<li>
+									<a 	class="nav-link px-3"
+										href="contato.html">
+
+										Contato
+									</a>
+								</li>
+							</ul>
+
+							<!-- Item Dropdown START-->
+								<ul class="navbar-nav ml-auto">
+									<li class="nav-item dropdown">
+
+										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop">
+											<img src="img/media-row.png" class="rounded bg-light p-1" height="30px">
+										</a>
+
+										<div class="dropdown-menu">
+											
+											<a 	href="https://fb.com/Facilita.Multimarcas/"
+												target="_blank"
+												class="dropdown-item">
+
+												Facebook
+											</a>
+											
+											<a 	href="https://instagram.com/facilita.multimarcas/"
+												target="_blank" 
+												class="dropdown-item">
+
+												Instagram
+											</a>
+											
+											<a 	href="https://bit.ly/WppFacilita"
+												target="_blank"
+												class="dropdown-item">
+												
+												WhatsApp
+											</a>
+
+										</div>
+									</li>
+								</ul>
+							<!-- Item Dropdown END -->
+
+						</div>
+
+					</div>
+				</nav>
+
+
+			<!-- LOGO IMG ((BANNER)) -->
+				<div class="container-fluid" style="background-color: #f7921e; padding-top: 72px">
+					<!-- Padding de 72px em cima e em baixo devido ao espaço do fixed-top   ^^^^^ -->
+					<div class="w-50 mx-auto">
+						<img class="mx-auto d-flex px-auto py-2 mb-4" src="img/logo-facilita.svg">
+					</div>
+				</div>
+
+
+		<!-- BLOG -->
+			<div class="container col-md-10 align-self-center mt-5 p-1" style="padding: 72px 0 72px 0">
+			<!-- FORMULÁRIO CONTATO HTML --> 	
+				<form id="contact-form" method="post" action="contact.php" role="form">
+
+				    <div class="messages"></div>
+
+				    <div class="controls">
+
+				        <div class="row">
+				            <div class="col-md-6">
+				                <div class="form-group">
+				                    <label for="form_name">Nome *</label>
+				                    <input 	id="form_name"
+				                    		type="text"
+				                    		name="name"
+				                    		class="form-control"
+				                    		placeholder="Digite seu primeiro nome *"
+				                    		required="required" data-error="É necessário colocar seu nome">
+				                    <div class="help-block with-errors"></div>
+				                </div>
+				            </div>
+				            <div class="col-md-6">
+				                <div class="form-group">
+				                    <label for="form_lastname">Sobrenome</label>
+				                    <input 	id="form_lastname"
+				                    		type="text"
+				                    		name="surname"
+				                    		class="form-control"
+				                    		placeholder="Digite seu sobrenome">
+				                    <div class="help-block with-errors"></div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="row">
+				            
+				            <div class="col-md-6">
+				                <div class="form-group">
+				                    <label for="form_email">E-mail *</label>
+				                    <input id="form_email"
+				                    		type="email"
+				                    		name="email"
+				                    		class="form-control"
+				                    		placeholder="Digite seu E-mail *"
+				                    		required="required"
+				                    		data-error="Coloque seu e-mail.">
+				                    <div class="help-block with-errors"></div>
+				                </div>
+				            </div>
+				            <div class="col-md-6">
+				                <div class="form-group">
+				                    <label for="phone">Telefone</label>
+				                    <input 	id="inputNumber"
+				                    		type="text" 
+				                    		name="phone"
+				                    		class="form-control"
+				                    		data-inputmask="'mask': '(99) 9999-99999'" 
+				                    		placeholder="Digite somente os números">
+
+				                    <div class="help-block with-errors"></div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="row">
+				            <div class="col-md-12">
+				                <div class="form-group">
+				                    <label for="form_message">Mensagem *</label>
+				                    <textarea 	id="form_message"
+				                    			name="message" class="form-control" placeholder="Digite sua mensagem *"
+				                    			rows="4"
+				                    			required="required"
+				                    			data-error="Deixe uma mensagem...">
+				                    				
+				                    		</textarea>
+				                    <div class="help-block with-errors"></div>
+				                </div>
+				            </div>
+				            <div class="row">
+				            <div class="col-md-12">
+				                <p class="text-muted pl-3">
+				                    É necessário preencher campos com ( <strong>*</strong> )   
+				                </p>
+				            </div>
+				        </div>
+				            <div class="col-md-12">
+				                <input type="submit" class="btn btn-success btn-send" value="Enviar...">
+				            </div>
+				        </div>
+				    </div>
+
+				</form>				
+			</div>
+
+
+		<!-- FOOTER -->
+			<div class="container-fluid" style="background-color: #f7921e;">
+
+				<div class="m-auto py-3 d-flex justify-content-center">
+
+					<div class="d-flex align-self-md-center align-items-center">
+
+						<div class="container col-12 col-md-5">
+							<nav class="navbar navbar-dark" style="background-color: #f7921e;">
+
+								<div class="container text-center text-md-left">
+
+									<ul class="navbar-nav h6">
+
+										<li>
+											<a 	class="nav-link active"
+												href="https://bit.ly/MapsFacilita">
+												<span class="badge">
+													<i class="h6 fas fa-map-marker-alt"></i>
+												</span>
+
+												R. Engenheiro Antônio Penido, 763 - Centro, Cruzeiro-SP, 12701-050
+											</a>
+										</li>
+
+										<li>
+											<a class="nav-link active" href="tel:551232118902">
+												<span class="badge">
+													<i class="h6 fas fa-phone-alt"></i>
+												</span>
+
+												(12) 3211-8902
+											</a>
+										</li>
+
+										<li>
+											<a class="nav-link active" href="tel:5512997323455">
+												<span class="badge">
+													<i class="h6 fab fa-whatsapp"></i>
+												</span>
+
+												(12) 99732-3455
+											</a>
+										</li>
+
+										<li>
+											<a class="nav-link active">
+												<span class="badge">
+													<i class="h6 fas fa-clock"></i>
+												</span>
+
+												Segunda a Sexta: 8:30 as 19:00 / Sábado: 8:30 as 16:00
+											</a>
+										</li>
+
+										<li>
+											<a class="nav-link active">
+												<span href="facilita.multimarca@gmail.com" class="badge"><i class="h6 fas fa-envelope"></i></span>
+												facilita.multimarca@gmail.com
+											</a>
+										</li>
+
+									</ul>
+							</nav>
+						</div>
+
+
+
+						<div class="container col-md-5">
+							<div class="fb-page rounded d-none d-md-inline-block" 
+							  data-href="fb.com/Facilita.Multimarcas"
+							  data-width="335" 
+							  data-hide-cover="true"
+							  data-show-facepile="false">
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<div class="container-fluid">
+				<p class="text-center text-muted pt-3">Feito por Gabriel Mato &copy;</p>
+			</div>
+
+
+		<!--  C O N T E Ú D O  Fim  -->
+
+
+
+		<!-- JavaScript (Opcional) -->
+   			<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+					integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+					crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+					integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+					crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+					integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+					crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+					integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8="
+					crossorigin="anonymous"></script>
+       		<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
+       		<script src="js/contact.js"></script>
+
+	</body>
+</html>

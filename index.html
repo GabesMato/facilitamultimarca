@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+	<!-- Meta tags Obrigatórias -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.grid.css">
+
+	<!-- Font-Awesome (Icons +more) -->
+	<script src="https://kit.fontawesome.com/6c31a57d6f.js" crossorigin="anonymous"></script>
+
+
+	<title>FACILITA Multimarcas</title>
+  </head>
+
+
+  <body>
+<!-- Facebook JS SDK -->
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v6.0"></script>
+
+
+
+<!-- MENU RESPONSIVO (Dropdown on Mobile) -->
+	<nav class="navbar fixed-top navbar-expand-md navbar-light shadow" style="background-color: #f7921e;">
+		<div class="container">
+
+			<a href="#">
+				<img class="navbar-brand h1 my-auto mr-4" src="img/logo-car.png" height="40px">
+			</a>
+			  
+			<button style="background-color: #eb840e;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navbarMenu" class="collapse navbar-collapse">
+
+				<ul class="navbar-nav mr-auto h6 font-weight-bold">
+					<li>
+						<a class="nav-link text-white px-3"
+							href="index.html">
+
+							Início
+						</a>
+					</li>
+					<li>
+						<a  class="nav-link px-3"
+							href="carros.html">
+
+							Carros
+						</a>
+					</li>
+					<li>
+						<a 	class="nav-link px-3"
+							href="contato.html">
+
+							Contato
+						</a>
+					</li>
+				</ul>
+
+				<!-- Item Dropdown START-->
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item dropdown">
+
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop">
+								<img src="img/media-row.png" class="rounded bg-light p-1" height="30px">
+							</a>
+
+							<div class="dropdown-menu">
+								
+								<a 	href="https://fb.com/Facilita.Multimarcas/"
+									target="_blank"
+									class="dropdown-item">
+
+									Facebook
+								</a>
+								
+								<a 	href="https://instagram.com/facilita.multimarcas/"
+									target="_blank" 
+									class="dropdown-item">
+
+									Instagram
+								</a>
+								
+								<a 	href="https://bit.ly/WppFacilita"
+									target="_blank"
+									class="dropdown-item">
+									
+									WhatsApp
+								</a>
+
+							</div>
+						</li>
+					</ul>
+				<!-- Item Dropdown END -->
+
+			</div>
+
+		</div>
+	</nav>
+
+
+<!-- LOGO IMG ((BANNER)) -->
+	<div class="container-fluid" style="background-color: #f7921e; padding-top: 72px">
+		<!-- Padding de 72px em cima e em baixo devido ao espaço do fixed-top   ^^^^^ -->
+		<div class="w-50 mx-auto">
+			<img class="mx-auto d-flex px-auto py-2 mb-4" src="img/logo-facilita.svg">
+		</div>
+	</div>
+
+
+<!-- Carousel SLIDES -->
+	<div id="carouselSlide"
+		 class="carousel slide d-none d-lg-block container col-sm-12 col-md-10"
+		 role="button"
+		 data-ride="carousel">
+		
+		<!-- Indicadores do Slide Carousel -->
+		<ol class="carousel-indicators"
+			style="filter: invert(100%);">
+
+			<li data-target="#carouselSlide"data-slide-to="0"></li>
+			<li data-target="#carouselSlide" data-slide-to="1" class="active"></li>
+			<li data-target="#carouselSlide" data-slide-to="2"></li>
+		
+		</ol>
+
+		<!-- Conteúdo dos Slides Carousel -->
+		<div class="carousel-inner shadow rounded">
+
+			<div class="carousel-item">
+				<img src="img/slide-1.jpg" class="img-fluid d-block mx-auto">
+				<div class="carousel-caption">
+
+					<p class="display-4">
+						Bem-vindo
+					</p>
+					<p class="font-weight-light h4">
+						SEU MELHOR NEGÓCIO!
+					</p>
+
+				</div>
+			</div>
+
+			<div class="carousel-item active">
+				<img src="img/slide-2.jpg" class="img-fluid d-block mx-auto">
+				<div class="carousel-caption">
+
+					<p class="display-4">
+						Um pouco sobre nós! :)
+					</p>
+					<p class="h4">
+						Somos uma revendedora de veículos localizada em Cruzeiro.
+					</p>
+
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<img src="img/slide-3.jpg" class="img-fluid d-block mx-auto">
+				<div class="carousel-caption">
+
+					<p class="display-4">
+						Nossa Equipe
+					</p>
+					<p class="h4">
+						Contamos com uma equipe qualificada e disposta
+						<br>a te ajudar em qualquer parte de sua compra<br>
+
+					</p>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Controles (< e >) dos Slides Carousel -->
+		<a 	class="carousel-control-prev"
+			style="filter: invert(100%);"
+			href="#carouselSlide"
+			role="button"
+			data-slide="prev">
+
+			<span class="carousel-control-prev-icon"></span>
+			<span class="sr-only">Anterior</span>
+
+		</a>
+		<a 	class="carousel-control-next"
+			style="filter: invert(100%);"
+			href="#carouselSlide"
+			role="button"
+			data-slide="next">
+
+			<span class="carousel-control-next-icon"></span>
+			<span class="sr-only">Próximo</span>
+
+		</a>
+
+	</div>
+
+
+<!-- BLOG -->
+	<div class="container col-md-10 align-self-center mt-5 p-1" style="padding: 72px 0 72px 0">
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis erat at erat aliquam, ac sagittis nisl dictum. Nunc pulvinar tellus felis, id pharetra mi molestie id. Aenean vestibulum orci sit amet lacus pretium, ut ullamcorper tortor commodo. Donec tortor libero, maximus id pulvinar nec, dignissim non massa. Aliquam erat volutpat. Pellentesque iaculis mi vitae neque mattis mattis. Mauris ac purus quis urna egestas gravida. Morbi varius pulvinar nulla vitae aliquam.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis erat at erat aliquam, ac sagittis nisl dictum. Nunc pulvinar tellus felis, id pharetra mi molestie id. Aenean vestibulum orci sit amet lacus pretium, ut ullamcorper tortor commodo. Donec tortor libero, maximus id pulvinar nec, dignissim non massa. Aliquam erat volutpat. Pellentesque iaculis mi vitae neque mattis mattis. Mauris ac purus quis urna egestas gravida. Morbi varius pulvinar nulla vitae aliquam.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis erat at erat aliquam, ac sagittis nisl dictum. Nunc pulvinar tellus felis, id pharetra mi molestie id. Aenean vestibulum orci sit amet lacus pretium, ut ullamcorper tortor commodo. Donec tortor libero, maximus id pulvinar nec, dignissim non massa. Aliquam erat volutpat. Pellentesque iaculis mi vitae neque mattis mattis. Mauris ac purus quis urna egestas gravida. Morbi varius pulvinar nulla vitae aliquam.
+	</p>
+	</div>
+
+
+<!-- FOOTER -->
+	<div class="container-fluid" style="background-color: #f7921e;">
+
+		<div class="m-auto py-3 d-flex justify-content-center">
+
+			<div class="d-flex align-self-md-center align-items-center">
+
+				<div class="container col-12 col-md-5">
+					<nav class="navbar navbar-dark" style="background-color: #f7921e;">
+
+						<div class="container text-center text-md-left">
+
+							<ul class="navbar-nav h6">
+
+								<li>
+									<a 	class="nav-link active"
+										href="https://bit.ly/MapsFacilita">
+										<span class="badge">
+											<i class="h6 fas fa-map-marker-alt"></i>
+										</span>
+
+										R. Engenheiro Antônio Penido, 763 - Centro, Cruzeiro-SP, 12701-050
+									</a>
+								</li>
+
+								<li>
+									<a class="nav-link active" href="tel:551232118902">
+										<span class="badge">
+											<i class="h6 fas fa-phone-alt"></i>
+										</span>
+
+										(12) 3211-8902
+									</a>
+								</li>
+
+								<li>
+									<a class="nav-link active" href="tel:5512997323455">
+										<span class="badge">
+											<i class="h6 fab fa-whatsapp"></i>
+										</span>
+
+										(12) 99732-3455
+									</a>
+								</li>
+
+								<li>
+									<a class="nav-link active">
+										<span class="badge">
+											<i class="h6 fas fa-clock"></i>
+										</span>
+
+										Segunda a Sexta: 8:30 as 19:00 / Sábado: 8:30 as 16:00
+									</a>
+								</li>
+
+								<li>
+									<a class="nav-link active">
+										<span href="facilita.multimarca@gmail.com" class="badge"><i class="h6 fas fa-envelope"></i></span>
+										facilita.multimarca@gmail.com
+									</a>
+								</li>
+
+							</ul>
+					</nav>
+				</div>
+
+
+
+				<div class="container col-md-5">
+					<div class="fb-page rounded d-none d-md-inline-block" 
+					  data-href="fb.com/Facilita.Multimarcas"
+					  data-width="335" 
+					  data-hide-cover="true"
+					  data-show-facepile="false">
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<div class="container-fluid">
+		<p class="text-center text-muted pt-3">Feito por Gabriel Mato &copy;</p>
+	</div>
+
+
+<!--  C O N T E Ú D O  Fim  -->
+
+
+
+<!-- JavaScript (Opcional) -->
+	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+			crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+			crossorigin="anonymous"></script>
+  </body>
+</html>
